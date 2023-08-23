@@ -38,7 +38,6 @@ The container is ready for use.
 | Linux Kernel | 4.18.0-348.el8.aarch64 |
 | Network Drivers | Mellanox Infinband |
 | Compiler | GCC v12.2.0 |
-| Python | v2.7.18 & v3.6.8|
 | MPI | OpenMPI v4.1.4 |
 | Profiler | TAU v2.32 |
 | Text Editor | vim |
