@@ -1,10 +1,18 @@
 # HPC Containers
 ---
 
-This repo contains information on usage of singularity containers deployed by system sofware development group at CDAC Bengaluru. These containers are available at singularity library and can be downloaded for use. 
+Application developers require help from multiple tools to port and fine-tune their application on the different platforms. These tools and parallel languages help them to achieve results faster than expected. 
+Installing such tools on a new environment takes lot of time and it is common to see users stuck on errors during installation phase of these tools. 
+Thus, we are hereby provide an option of using HPC containers. Users can just download these and with just a few commands the whole environment is available for their use without much hassle.
+
+This repo contains information on usage of these singularity containers deployed by System Sofware Development Group (SSDG) at CDAC Bengaluru. These containers are available at singularity library and can be downloaded for use. 
 
 ## List of containers
 
 Currently the following containers are supported.
 
-+ [tau_aarch64](singularity_link_here): This container is based on using TAU for profiling OpenMPI applications. [More Info](TAU_aarch64/README.md)
++ [hybridapplication_tau_aarch64](https://cloud.sylabs.io/library/cdac_ssdg/aarch64_container/hybridapplication_tau_aarch64): This container is based on using TAU for profiling OpenMPI applications. [More Info](TAU_aarch64/README.md)
+
+## Help needed?
+
+If users are stuck with any of the containers listed above or require additional support for these containers they can raise their issues on this repository. 
