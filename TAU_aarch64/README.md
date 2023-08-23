@@ -1,34 +1,37 @@
-# TAU_aarch64 
-
-**Description:** This README explains how to use the [tau_aarch64.sif](singularity-link) container. It also describes the major softwares present in the image for the use of user.
-
+#  hybridapplication_tau_aarch64.sif
 ---
+
+## Description
+
+[hybridapplication_tau_aarch64.sif](https://cloud.sylabs.io/library/cdac_ssdg/aarch64_container/hybridapplication_tau_aarch64) is a [singularity](https://en.wikipedia.org/wiki/Singularity_(software)) container. It can be used for profiling MPI (OpenMPI) based applications. 
+
+This README shows the usage of the container. It also lists the major softwares present in the image for the use.
 
 ## Usage
 
-In order to use [this](singularity-link) container follow the following steps:
+In order to use [this container](https://cloud.sylabs.io/library/cdac_ssdg/aarch64_container/hybridapplication_tau_aarch64) follow the following steps:
 
 + Get the image from singularity library using:
 ```bash
-singularity pull <image_link>
+singularity pull --arch arm64 library://cdac_ssdg/aarch64_container/hybridapplication_tau_aarch64:v1
 ```
 
 + Once download is complete invoke the image shell using:
 ```bash
-singularity shell tau_openmpi_aarch64.sif
+singularity shell hybridapplication_tau_aarch64.sif
  ```
 
-+ Once inside the container shell set the environment using:
++ Set the environment using:
 ```bash
 source /usr/set_env.sh
 ```
 
-The container is ready for use. 
+The container is ready for use.
 
 
 ## Software details
 
-[tau_openmpi_aarch64](singularity-link) contains the following softwares/packages:
+[hybridapplication_tau_aarch64.sif]([singularity-link](https://cloud.sylabs.io/library/cdac_ssdg/aarch64_container/hybridapplication_tau_aarch64)) contains the following softwares/packages:
 
 | Category | Details |
 | --- | --- |
