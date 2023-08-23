@@ -3,9 +3,7 @@
 
 ## Description
 
-[hybridapplication_tau_aarch64.sif](https://cloud.sylabs.io/library/cdac_ssdg/aarch64_container/hybridapplication_tau_aarch64) is a [singularity](https://en.wikipedia.org/wiki/Singularity_(software)) container based on ARM (aarch64). It can be used for profiling MPI (OpenMPI) based applications. 
-
-This README shows the usage of the container. It also lists the major softwares present in the image for the use.
+[hybridapplication_tau_aarch64.sif](https://cloud.sylabs.io/library/cdac_ssdg/aarch64_container/hybridapplication_tau_aarch64) is a [singularity](https://en.wikipedia.org/wiki/Singularity_(software)) container based on ARM (aarch64). It can be used for profiling MPI (OpenMPI) based applications. This README showcases the usage of the container. It also lists the major softwares present in the container image for use.
 
 ## Usage
 
