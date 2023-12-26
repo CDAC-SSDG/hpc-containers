@@ -3,11 +3,11 @@
 
 ## Description
 
-[mathlibrary_aarch64.sif](https://cloud.sylabs.io/library/cdac_ssdg/aarch64_container/mathlibrary_aarch64) is a [singularity](https://en.wikipedia.org/wiki/Singularity_(software)) container based on ARM (aarch64). This container is used for solving the BLAS, LAPACK operations using OpenBLAS math library and FFT operations using FFTW math library. We can also profile these operations using [TAU Profiler](https://www.cs.uoregon.edu/research/tau/) which is available within the container. This README showcases the usage of the container, invoking math libraries and TAU profiling . It also lists the major softwares present in the container image for use.
+[mathlibrary_aarch64.sif](https://ssdg.cdacb.in:5000/) is a [singularity](https://en.wikipedia.org/wiki/Singularity_(software)) container based on ARM (aarch64). This container is used for solving the BLAS, LAPACK operations using OpenBLAS math library and FFT operations using FFTW math library. We can also profile these operations using [TAU Profiler](https://www.cs.uoregon.edu/research/tau/) which is available within the container. This README showcases the usage of the container, invoking math libraries and TAU profiling . It also lists the major softwares present in the container image for use.
 
 ## Usage
 
-In order to use [this container](https://cloud.sylabs.io/library/cdac_ssdg/aarch64_container/mathlibrary_aarch64) follow the following steps:
+In order to use [this container](https://ssdg.cdacb.in:5000/) follow the following steps:
 
 + Get the image from singularity library using:
 ```bash
@@ -67,7 +67,7 @@ pprof
 
 ## Software details
 
-[hybridapplication_tau_aarch64.sif]([singularity-link](https://cloud.sylabs.io/library/cdac_ssdg/aarch64_container/mathlibrary_aarch64)) contains the following softwares/packages:
+[hybridapplication_tau_aarch64.sif](https://ssdg.cdacb.in:5000/) contains the following softwares/packages:
 
 | Category | Details |
 | --- | --- |
