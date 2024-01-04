@@ -9,10 +9,7 @@
 
 In order to use [this container](https://ssdg.cdacb.in:5000/) follow the following steps:
 
-+ Get the image from singularity library using:
-```bash
-singularity pull --arch arm64 library://cdac_ssdg/aarch64_container/mathlibrary_aarch64:v1
-```
++ Get the image from [CDAC's open source download page](https://ssdg.cdacb.in:5000/) 
 
 + Once download is complete invoke the image shell using:
 ```bash
@@ -83,5 +80,7 @@ pprof
 | Additional softwares| wget, curl |
 
 
+## Help
 
+Any query or help regarding the container usage needed? Raise an issue/discussion on the repository.
 
