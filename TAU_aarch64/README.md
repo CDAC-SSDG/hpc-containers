@@ -23,7 +23,31 @@ source /usr/set_env.sh
 
 The container is ready for use.
 
+## Using CUDA
 
+- Compiling cuda code
+```bash
+nvcc <program.cu> 
+ ```
+- Run the code
+```bash
+./a.out
+```
+## Using CUDA with mpi
+- Compiling cuda with mpi code
+```bash
+nvcc -Xcompiler -fopenmp <program_name.cu> -o <program_name> -I$<OPENMPI_ROOT>/include -L$<OPENMPI_ROOT}/lib -lmpi -lgomp 
+ ```
+- Run the code
+```bash
+mpirun -np <no. of processes> ./<program_name>
+```
+## Using TAU for profiling CUDA with mpi code
+After compiling the CUDA + mpi code run the code as follows 
+```bash
+mpirun -np <no. of processes> tau_exec ./<program_name>
+pprof
+```
 ## Software details
 
 [hybridapplication_tau_aarch64.sif](https://ssdg.cdacb.in:5000/) contains the following softwares/packages:
@@ -36,7 +60,8 @@ The container is ready for use.
 | Network Drivers | Mellanox Infinband |
 | Compiler | GCC v12.2.0 |
 | MPI | OpenMPI v4.1.4 |
-| Profiler | TAU v2.32 |
+| CUDA | 12.3 |
+| Profiler | TAU v2.33 |
 | Text Editor | vim |
 | Git | v2.27.0 |
 | Additional softwares| wget, curl |
