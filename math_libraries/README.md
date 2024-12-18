@@ -24,14 +24,17 @@ source /usr/setvars.sh
 The container is ready for use.
 
 ### Using Math libraries for BLAS/LAPACK 
+
 + Compiling the code:
 ```bash
 gcc <program.c> -lopenblas
 ```
+
 + Run the code:
 ```bash
 ./a.out
 ```
+
 + OpenBLAS also supports threading:
 + setting the threads:
 ```bash
@@ -39,22 +42,31 @@ export OPENBLAS_NUM_THREADS= <no of threads>
 ```
 
 ### Using Math libraries for FFT
-+ Compiling the code:
+
+###### Compiling the FFTW code:
+
+- Without threading:
 ```bash
-1) Without Threading :
-        gcc <program.c> -lm -lfftw3f
-2) With Threading :
-        gcc <program.c> -lm -lfftw3f_threads -lfftw3f -lpthread 
+gcc <program.c> -lm -lfftw3f
 ```
-+ Run the code:
+
+- With threading:
+```bash
+gcc <program.c> -lm -lfftw3f_threads -lfftw3f -lpthread
+```
+
+- To execute the compiled binary:
 ```bash
 ./a.out
 ```
+
 ### Using TAU for profiling
+
 + Compiling the code:
 ```bash
 tau_CC.sh <program.c> -optCompInst
 ```
+
 + Run the code and check profile
 ```bash
 ./a.out
