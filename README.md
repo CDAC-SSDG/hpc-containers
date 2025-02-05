@@ -12,7 +12,7 @@ This repo contains information on usage of these singularity containers deployed
 Currently the following containers are supported.
 
 + [hybridapplication_tau_aarch64](https://ssdg.cdacb.in:5000/): This container is based on using TAU for profiling hybrid applications on ARM architecture. [More Info](TAU_aarch64/README.md)
-+ [Optimized OpenBLAS](): This container leverages the OpenBLAS library optimized for ARM with SVE to perform BLAS and LAPACK operations.
++ [Optimized OpenBLAS](): This container leverages the OpenBLAS library optimized for ARM with SVE to perform BLAS and LAPACK operations.[More Info](math_libraries/README.md)
 
 ## Help needed?
 
