@@ -47,8 +47,8 @@ export OPENBLAS_NUM_THREADS= <no of threads>
 | Category | Details |
 | --- | --- |
 | Architecture | ARM / aarch64 |
-| Operating System | CentOS 8 |
-| Linux Kernel | 4.18.0-348.el8.aarch64 |
+| Operating System | AlmaLinux 9.4 |
+| Linux Kernel | 5.14.0-362.8.1.el9_3.aarch64 |
 | BLAS/LAPACK Library |  OpenBLAS v0.3.26 |
 | Compiler | GCC v12.2.0 |
 
