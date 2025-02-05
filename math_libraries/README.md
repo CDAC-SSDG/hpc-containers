@@ -3,7 +3,7 @@
 
 ## Description
 
-The Openblas_arm.sif Singularity container offers an ARM-optimized version of the OpenBLAS library, designed to accelerate BLAS and LAPACK operations. It leverages Scalable Vector Extension (SVE) technology for improved performance on ARM-based systems. The README provides instructions on how to use the container and invoke the math libraries.
+The Openblas_arm.sif Singularity container offers an ARM-optimized version of the OpenBLAS library, designed to accelerate BLAS and LAPACK operations. It leverages Scalable Vector Extension (SVE) technology for improved performance on ARM-based systems. The README provides instructions on how to use the container and invoke the math library.
 
 ## Usage
 
