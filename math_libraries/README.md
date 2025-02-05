@@ -1,33 +1,32 @@
-# mathlibrary_aarch64.sif
+# Openblas_arm.sif
 ---
 
 ## Description
 
-[mathlibrary_aarch64.sif](https://ssdg.cdacb.in:5000/) is a [singularity](https://en.wikipedia.org/wiki/Singularity_(software)) container based on ARM (aarch64). This container is used for solving the BLAS, LAPACK operations using OpenBLAS math library and FFT operations using FFTW math library. We can also profile these operations using [TAU Profiler](https://www.cs.uoregon.edu/research/tau/) which is available within the container. This README showcases the usage of the container, invoking math libraries and TAU profiling . It also lists the major softwares present in the container image for use.
+The Openblas_arm.sif Singularity container offers an ARM-optimized version of the OpenBLAS library, designed to accelerate BLAS and LAPACK operations. It leverages Scalable Vector Extension (SVE) technology for improved performance on ARM-based systems. The README provides instructions on how to use the container and invoke the math libraries.
 
 ## Usage
 
-In order to use [this container](https://ssdg.cdacb.in:5000/) follow the following steps:
+In order to use [this container]() follow the following steps:
 
-+ Get the image from [CDAC's open source download page](https://ssdg.cdacb.in:5000/) 
++ Get the image from [CDAC's open source download page]() 
 
 + Once download is complete invoke the image shell using:
 ```bash
-singularity shell mathlibrary_aarch64.sif
+singularity shell openblas_arm.sif
  ```
 
 + Set the environment using:
 ```bash
-source /usr/setvars.sh
+export LD_LIBRARY_PATH=/home/user/openblas/lib/:$LD_LIBRARY_PATH
 ```
-
 The container is ready for use.
 
 ### Using Math libraries for BLAS/LAPACK 
 
 + Compiling the code:
 ```bash
-gcc <program.c> -lopenblas
+gcc <program.c> -I /home/user/openblas/include/ -L /home/user/openblas/lib/  -lopenblas
 ```
 
 + Run the code:
@@ -41,56 +40,17 @@ gcc <program.c> -lopenblas
 export OPENBLAS_NUM_THREADS= <no of threads>
 ```
 
-### Using Math libraries for FFT
-
-###### Compiling the FFTW code:
-
-- Without threading:
-```bash
-gcc <program.c> -lm -lfftw3f
-```
-
-- With threading:
-```bash
-gcc <program.c> -lm -lfftw3f_threads -lfftw3f -lpthread
-```
-
-- To execute the compiled binary:
-```bash
-./a.out
-```
-
-### Using TAU for profiling
-
-+ Compiling the code:
-```bash
-tau_CC.sh <program.c> -optCompInst
-```
-
-+ Run the code and check profile
-```bash
-./a.out
-pprof
-```
-
-
 ## Software details
 
-[hybridapplication_tau_aarch64.sif](https://ssdg.cdacb.in:5000/) contains the following softwares/packages:
+[Openblas_arm.sif]() contains the following softwares/packages:
 
 | Category | Details |
 | --- | --- |
 | Architecture | ARM / aarch64 |
 | Operating System | CentOS 8 |
 | Linux Kernel | 4.18.0-348.el8.aarch64 |
-| BLAS/LAPACK Library |  OpenBLAS v0.3.23 |
-| FFT Library | FFTW-3.3.10 |
+| BLAS/LAPACK Library |  OpenBLAS v0.3.26 |
 | Compiler | GCC v12.2.0 |
-| Profiler | TAU v2.32.1 |
-| Text Editor | vim |
-| Git | v2.27.0 |
-| Additional softwares| wget, curl |
-
 
 ## Help
 
